@@ -1,165 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Project</title>
-    <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles Gonzalez Jr | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link href=
-' https://fonts.googleapis.com/css?family=Roboto+Slab'
-        rel='stylesheet' />
-  </head>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">Charle Gonzalez Jr</a>
+        <ul class="nav-links">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-  <body>
-    <div class="fixed-button">
-    <a href="mailto:charlesgonzalezjr148@gmail.com" target="_blank">
-      <i class="fas fa-envelope"></i>
-    </a>
-  </div>
-    <div style="display: flex; flex-direction: column">
-      <div class="profile-picture">
-        <div class="profile-img">
-          <img src="/IMG_6694.jpg" alt="Charles Gonzalez Jr" />
+    <header class="hero">
+        <div class="hero-content">
+            <img src="ProfilePic.jpg" alt="Charles Gonzalez Jr" class="profile-img" />
+            <h1>Charles Gonzalez Jr</h1>
+            <p style="margin-bottom: 60px;">Software Developer</p>
+            <div class="social-icons">
+                <a href="https://github.com/charliegonzo" target="_blank" class="github"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/charles-gonzalez-566ab025a/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+            </div>
         </div>
-      </div>
-      <div class="social-buttons-container">
-      <a href="https://github.com/charliegonzo" class="social-button" target="_blank">
-        <i class="fab fa-github"></i> 
-      </a>
-      <a href="https://www.linkedin.com/in/charles-gonzalez-566ab025a/" class="social-button" target="_blank">
-        <i class="fab fa-linkedin"></i> 
-      </a>
-    
-      </div>
-      <h2 style="text-align: center"><b>Charles Gonzalez Jr</h2>
-      <h1 style="text-align: center; font-size: 3em;">Software Developer</h1>
-    </div>
-    <div class="section-splitter"></div>
-    <h1 class="section-title">
-        Projects
-    </h1>
+    </header>
 
-    <div class="projects-section">
-      <div class="project-card">
-        <div class="project-image">
-          <img src="netfli.png" alt="Project 1">
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <img src="netfli.png" alt="Netflix Clone">
+                <h3>Netflix Clone</h3>
+                <p>A homepage clone using HTML & CSS to build design skills.</p>
+                <a href="https://github.com/charliegonzo/netfilx" target="_blank" class="btn">GitHub</a>
+            </div>
+            <div class="project-card">
+                <img src="stock.png" alt="Stock-Cloud">
+                <h3>Stock-Cloud</h3>
+                <p>Simulate stock trading with React, Spring Boot, and MongoDB Atlas.</p>
+                <a href="https://github.com/CharlieGonzo/Stock-cloud-app" target="_blank" class="btn">GitHub</a>
+                <a href="https://stock-cloud-app.onrender.com" target="_blank" class="btn live-demo">Live Demo</a>
+            </div>
+            <div class="project-card">
+                <img src="recipe.png" alt="Recipe Management App">
+                <h3>Recipe Management App</h3>
+                <p>Full-stack app for storing and viewing recipes with account creation.</p>
+                <a href="https://github.com/charliegonzo/Recipe-Manager" target="_blank" class="btn">GitHub</a>
+            </div>
         </div>
-        <div class="project-details">
-          <div class="project-title">Netflix Clone</div>
-          <div class="project-description">To strenghten my web design skills, I developed a clone of the home page of Netflix. Using just HTML and CSS</div>
-          <a href="https://github.com/charliegonzo/netfilx" class="social-button" style="height: 20px; width: 50px;" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-      </div>
+    </section>
 
-     
-      <div class="project-card">
-        <div class="project-image">
-          <img src="stock.png" alt="Project 1">
+    <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill-icon"><i class="fab fa-react"></i><p>React</p></div>
+            <div class="skill-icon"><i class="fab fa-html5"></i><p>HTML5</p></div>
+            <div class="skill-icon"><i class="fab fa-css3"></i><p>CSS3</p></div>
+            <div class="skill-icon"><i class="fab fa-java"></i><p>Java</p></div>
+            <div class="skill-icon"><i class="fab fa-bootstrap"></i><p>Bootstrap</p></div>
+            <div class="skill-icon"><i class="fas fa-database"></i><p>SQL</p></div>
         </div>
-        <div class="project-details">
-          <div class="project-title">Stock-Cloud</div>
-          <div class="project-description">An in-progress project that lets the user simulate trading stocks with real-time info. This project uses React, Spring Boot, MongoDBAtlas, and JWT Authentication</div>
-          <a href="https://github.com/CharlieGonzo/Stock-cloud-app" class="social-button" style="height: 20px; width: 50px;" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://stock-cloud-app.onrender.com">Live Demo</a>
-        </div>
-      </div>
-  
-      <div class="project-card">
-        <div class="project-image">
-          <img src="recipe.png" alt="Project 2">
-        </div>
-        <div class="project-details">
-          <div class="project-title">Recipe Management App</div>
-          <div class="project-description">A full-stack application that allows a user to create an account, have access to many recipes of different origins, the ability to like and dislike recipes, as well as search for recipes. This project uses MYSQL, Spring Boot, and React</div>
-          <a href="https://github.com/charliegonzo/Recipe-Manager" class="social-button" style="height: 20px; width: 50px;" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-      </div>
-      </div>
-      <div class="section-splitter"></div>
-      <h1 class="section-title">
-        Skills
-    </h1>
-    <div class="skills-section">
-      
-        <div class="skill-icon">
-          <i class="fab fa-react"></i>
-        </div>
-    
-        <div class="skill-icon">
-          <i class="fas fa-power-off"></i>
-        </div>
-    
-        <div class="skill-icon">
-          <i class="fab fa-html5"></i>
-        </div>
-    
-        <div class="skill-icon">
-          <i class="fab fa-css3"></i>
-        </div>
-    
-        <div class="skill-icon">
-          <i class="fab fa-bootstrap"></i>
-        </div>
-    
-        <div class="skill-icon">
-          <i class="fab fa-java"></i>
-        </div>
-      </div>
-  
-      <div class="section-splitter">
+    </section>
 
-      </div>
-       <h1 class="section-title">
-        About Me
-    </h1>
-    <div class="container">
-      <div class="text-section">
-        <div class="text-content">
-          
-        <p>Greetings! I'm Charles Gonzalez Jr, a dedicated software developer who finds joy in crafting code and creating innovative solutions. When I'm not immersed in the world of programming, you'll catch me playing sick beats on my drum set, experimenting with flavors in the kitchen, or taking way too many pics of my cats. Coding, drumming, cooking, and cute animals — these diverse passions define my journey, where creativity and curiosity intertwine.</p>
+    <section id="about" class="about-section">
+        <h2 style="text-align: center;">About Me</h2>
+        <div class="about-content">
+            <p>Hi, I'm Charles! I'm passionate about coding, drumming, and cooking, combining creativity with technical skills. I thrive in challenging environments, where innovation meets practicality.</p>
+            <div class="about-img" style="background-image: url('IMG_1386.jpg');"></div>
         </div>
-      </div>
-      <div class="image-section">
-        <div class="image-container" style="background-image: url('IMG_1386.jpg');"></div>
-      </div>
-    </div>
-    
-    <div class="section-splitter"></div>
+    </section>
 
-    <h1 class="section-title">
-      Contact Me!
-  </h1>
-  <div class="form-container">
-  <div class="contact-form">
-    <form action="https://formspree.io/f/mbjvnkyv" method="POST" id="contactForm">
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-      </div>
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/mbjvnkyv" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn submit-btn">Submit</button>
+        </form>
+    </section>
 
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      </div>
+    <footer>
+        <p>&copy; 2024 Charles Gonzalez Jr</p>
+    </footer>
 
-      <div class="form-group">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-      </div>
-
-      <div class="form-group">
-        <button type="submit">Submit</button>
-      </div>
-    </form>
-  </div>
-  </div>
-  
-  </body>
+</body>
 </html>
